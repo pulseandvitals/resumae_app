@@ -3,6 +3,7 @@ import { ref, computed } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import { useResumeBuilder } from '@/Composables/useResumeBuilder';
 import { useSelectedTemplate } from '@/Composables/useSelectedTemplate';
+import { useRecommendedTemplates } from '@/Composables/useRecommendedTemplates';
 
 import PersonalInfoSection from '@/Components/Builder/PersonalInfoSection.vue';
 import SummarySection from '@/Components/Builder/SummarySection.vue';
@@ -63,6 +64,11 @@ const {
     addCustomItem,
     removeCustomItem,
 } = useResumeBuilder();
+
+const recommendedKeys = useRecommendedTemplates(
+    computed(() => props.templates),
+    computed(() => resume.skills),
+);
 
 const steps = [
     { id: 1, label: 'Information' },
@@ -203,6 +209,7 @@ function nextStep() {
                     <TemplatePicker
                         :templates="templates"
                         :selected-key="selectedKey"
+                        :recommended-keys="recommendedKeys"
                         @select="selectedKey = $event"
                     />
                 </div>

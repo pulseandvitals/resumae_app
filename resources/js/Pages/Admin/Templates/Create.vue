@@ -12,6 +12,7 @@ const form = useForm({
     key: '',
     name: '',
     description: '',
+    recommended_roles: [],
     price: '',
     sort_order: 0,
     is_active: true,

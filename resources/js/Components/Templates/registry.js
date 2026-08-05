@@ -18,6 +18,36 @@ import TwoColumnTemplate from '@/Components/Templates/TwoColumnTemplate.vue';
 import AcademicTemplate from '@/Components/Templates/AcademicTemplate.vue';
 import StartupTemplate from '@/Components/Templates/StartupTemplate.vue';
 import SwissTemplate from '@/Components/Templates/SwissTemplate.vue';
+import SidebarNavyTemplate from '@/Components/Templates/SidebarNavyTemplate.vue';
+import SidebarForestTemplate from '@/Components/Templates/SidebarForestTemplate.vue';
+import SidebarPlumTemplate from '@/Components/Templates/SidebarPlumTemplate.vue';
+import BannerCrimsonTemplate from '@/Components/Templates/BannerCrimsonTemplate.vue';
+import BannerTealTemplate from '@/Components/Templates/BannerTealTemplate.vue';
+import BannerSlateTemplate from '@/Components/Templates/BannerSlateTemplate.vue';
+import IconAccentBlueTemplate from '@/Components/Templates/IconAccentBlueTemplate.vue';
+import IconAccentCoralTemplate from '@/Components/Templates/IconAccentCoralTemplate.vue';
+import IconAccentOliveTemplate from '@/Components/Templates/IconAccentOliveTemplate.vue';
+import LedgerCharcoalTemplate from '@/Components/Templates/LedgerCharcoalTemplate.vue';
+import LedgerSteelTemplate from '@/Components/Templates/LedgerSteelTemplate.vue';
+import LedgerSandTemplate from '@/Components/Templates/LedgerSandTemplate.vue';
+import PortfolioMagentaTemplate from '@/Components/Templates/PortfolioMagentaTemplate.vue';
+import PortfolioCyanTemplate from '@/Components/Templates/PortfolioCyanTemplate.vue';
+import PortfolioAmberTemplate from '@/Components/Templates/PortfolioAmberTemplate.vue';
+import SplitHeaderIndigoTemplate from '@/Components/Templates/SplitHeaderIndigoTemplate.vue';
+import SplitHeaderEmeraldTemplate from '@/Components/Templates/SplitHeaderEmeraldTemplate.vue';
+import SplitHeaderMaroonTemplate from '@/Components/Templates/SplitHeaderMaroonTemplate.vue';
+import CardSkyTemplate from '@/Components/Templates/CardSkyTemplate.vue';
+import CardLimeTemplate from '@/Components/Templates/CardLimeTemplate.vue';
+import CardGrapeTemplate from '@/Components/Templates/CardGrapeTemplate.vue';
+import RibbonRubyTemplate from '@/Components/Templates/RibbonRubyTemplate.vue';
+import RibbonCobaltTemplate from '@/Components/Templates/RibbonCobaltTemplate.vue';
+import RibbonMustardTemplate from '@/Components/Templates/RibbonMustardTemplate.vue';
+import StackedPlumTemplate from '@/Components/Templates/StackedPlumTemplate.vue';
+import StackedTealTemplate from '@/Components/Templates/StackedTealTemplate.vue';
+import StackedGrayTemplate from '@/Components/Templates/StackedGrayTemplate.vue';
+import FrameNavyTemplate from '@/Components/Templates/FrameNavyTemplate.vue';
+import FrameBronzeTemplate from '@/Components/Templates/FrameBronzeTemplate.vue';
+import FrameForestTemplate from '@/Components/Templates/FrameForestTemplate.vue';
 
 /**
  * Maps a ResumeTemplate's `key` (set by the admin) to its Vue component.
@@ -44,4 +74,34 @@ export const TEMPLATE_COMPONENTS = {
     academic: AcademicTemplate,
     startup: StartupTemplate,
     swiss: SwissTemplate,
+    sidebarnavy: SidebarNavyTemplate,
+    sidebarforest: SidebarForestTemplate,
+    sidebarplum: SidebarPlumTemplate,
+    bannercrimson: BannerCrimsonTemplate,
+    bannerteal: BannerTealTemplate,
+    bannerslate: BannerSlateTemplate,
+    iconaccentblue: IconAccentBlueTemplate,
+    iconaccentcoral: IconAccentCoralTemplate,
+    iconaccentolive: IconAccentOliveTemplate,
+    ledgercharcoal: LedgerCharcoalTemplate,
+    ledgersteel: LedgerSteelTemplate,
+    ledgersand: LedgerSandTemplate,
+    portfoliomagenta: PortfolioMagentaTemplate,
+    portfoliocyan: PortfolioCyanTemplate,
+    portfolioamber: PortfolioAmberTemplate,
+    splitheaderindigo: SplitHeaderIndigoTemplate,
+    splitheaderemerald: SplitHeaderEmeraldTemplate,
+    splitheadermaroon: SplitHeaderMaroonTemplate,
+    cardsky: CardSkyTemplate,
+    cardlime: CardLimeTemplate,
+    cardgrape: CardGrapeTemplate,
+    ribbonruby: RibbonRubyTemplate,
+    ribboncobalt: RibbonCobaltTemplate,
+    ribbonmustard: RibbonMustardTemplate,
+    stackedplum: StackedPlumTemplate,
+    stackedteal: StackedTealTemplate,
+    stackedgray: StackedGrayTemplate,
+    framenavy: FrameNavyTemplate,
+    framebronze: FrameBronzeTemplate,
+    frameforest: FrameForestTemplate,
 };

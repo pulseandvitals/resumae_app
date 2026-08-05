@@ -45,6 +45,12 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Templates
                                 </NavLink>
+                                <NavLink
+                                    :href="route('admin.payments.index')"
+                                    :active="route().current('admin.payments.*')"
+                                >
+                                    Payments
+                                </NavLink>
                             </div>
                         </div>
 
@@ -157,6 +163,12 @@ const showingNavigationDropdown = ref(false);
                             :active="route().current('admin.templates.*')"
                         >
                             Templates
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('admin.payments.index')"
+                            :active="route().current('admin.payments.*')"
+                        >
+                            Payments
                         </ResponsiveNavLink>
                     </div>
 

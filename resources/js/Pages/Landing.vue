@@ -23,7 +23,7 @@ const features = [
         description: 'Watch your resume update instantly as you type, section by section.',
     },
     {
-        title: '10 Designer Templates',
+        title: '50 Designer Templates',
         description: 'Modern, Classic, Executive, Creative and more — switch freely before you pay.',
     },
     {
@@ -51,7 +51,7 @@ const faqs = [
     },
     {
         question: 'Can I switch templates after I start filling in my details?',
-        answer: 'Yes. Your information stays the same — switch between any of the 10 templates as many times as you like before downloading.',
+        answer: `Yes. Your information stays the same — switch between any of the ${props.templates.length} templates as many times as you like before downloading.`,
     },
     {
         question: 'Will my resume work with ATS (applicant tracking systems)?',
@@ -122,9 +122,15 @@ const jsonLd = computed(() => ({
                         <span class="text-indigo-600">hired</span> — free
                     </h1>
                     <p class="mt-6 text-lg leading-relaxed text-gray-600">
-                        Fill in your details, pick from 10 designer templates, and preview your
-                        resume live. No account, no spam — pay only when you're ready to download
+                        Fill in your details, pick from {{ props.templates.length }} designer templates, and preview
+                        your resume live. No account, no spam — pay only when you're ready to download
                         the PDF.
+                    </p>
+                    <p class="mt-3 flex items-center gap-2 text-sm font-medium text-gray-500">
+                        <svg class="size-4 shrink-0 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l1.5 1.5L15 9.75M12 3l7.5 4.5v9L12 21l-7.5-4.5v-9L12 3z" />
+                        </svg>
+                        Recruiter-tested, ATS-friendly designs built to help you get noticed and get hired faster.
                     </p>
                     <div class="mt-8 flex flex-wrap items-center gap-4">
                         <Link
@@ -142,15 +148,15 @@ const jsonLd = computed(() => ({
                     </div>
                     <dl class="mt-10 grid grid-cols-3 gap-6 border-t border-gray-200 pt-6">
                         <div>
-                            <dt class="text-2xl font-bold text-gray-900">10</dt>
+                            <dt class="text-2xl font-bold text-gray-900">{{ props.templates.length }}</dt>
                             <dd class="text-sm text-gray-500">Templates</dd>
                         </div>
                         <div>
-                            <dt class="text-2xl font-bold text-gray-900">₱0</dt>
+                            <dt class="text-2xl font-bold text-gray-900">FREE</dt>
                             <dd class="text-sm text-gray-500">To build & preview</dd>
                         </div>
                         <div>
-                            <dt class="text-2xl font-bold text-gray-900">0</dt>
+                            <dt class="text-2xl font-bold text-gray-900">NO</dt>
                             <dd class="text-sm text-gray-500">Accounts needed</dd>
                         </div>
                     </dl>
@@ -235,7 +241,9 @@ const jsonLd = computed(() => ({
                     </h2>
                     <p class="mt-4 text-gray-600">
                         Every template is a real, working design — click one to start building
-                        with it selected.
+                        with it selected. Each one is tagged with the roles it's great for, and
+                        once you start typing your skills in the builder we'll flag the templates
+                        recommended for your field.
                     </p>
                 </div>
 

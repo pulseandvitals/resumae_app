@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue';
 import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import TextInput from '@/Components/TextInput.vue';
@@ -18,6 +19,16 @@ const emit = defineEmits(['submit']);
 function isKeyDisabled(key) {
     return props.usedKeys.includes(key) && key !== props.form.key;
 }
+
+const recommendedRolesText = computed({
+    get: () => (props.form.recommended_roles ?? []).join(', '),
+    set: (value) => {
+        props.form.recommended_roles = value
+            .split(',')
+            .map((role) => role.trim())
+            .filter(Boolean);
+    },
+});
 </script>
 
 <template>
@@ -63,6 +74,18 @@ function isKeyDisabled(key) {
                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             ></textarea>
             <InputError class="mt-2" :message="form.errors.description" />
+        </div>
+
+        <div>
+            <InputLabel for="recommended_roles" value="Recommended for (roles/skills)" />
+            <TextInput
+                id="recommended_roles"
+                v-model="recommendedRolesText"
+                class="mt-1 block w-full"
+                placeholder="e.g. Virtual Assistant, Customer Service Representative"
+            />
+            <p class="mt-1 text-xs text-gray-400">Comma-separated. Shown as a "Recommended" badge when a user's skills match.</p>
+            <InputError class="mt-2" :message="form.errors.recommended_roles" />
         </div>
 
         <div class="grid grid-cols-2 gap-4">

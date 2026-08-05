@@ -32,6 +32,8 @@ class TemplateUpdateRequest extends FormRequest
             ],
             'name' => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string', 'max:500'],
+            'recommended_roles' => ['nullable', 'array'],
+            'recommended_roles.*' => ['string', 'max:100'],
             'price' => ['required', 'numeric', 'min:0', 'max:99999.99'],
             'is_active' => ['boolean'],
             'sort_order' => ['integer', 'min:0'],

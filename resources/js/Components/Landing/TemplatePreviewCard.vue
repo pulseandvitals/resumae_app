@@ -30,6 +30,9 @@ const SCALE = 0.4;
             <p v-if="template.description" class="mt-0.5 line-clamp-1 text-xs text-gray-500">
                 {{ template.description }}
             </p>
+            <p v-if="template.recommended_roles?.length" class="mt-1.5 line-clamp-1 text-[11px] font-medium text-indigo-600">
+                Great for: {{ template.recommended_roles.slice(0, 3).join(', ') }}
+            </p>
         </div>
     </Link>
 </template>

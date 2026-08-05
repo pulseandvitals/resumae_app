@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\TemplateController;
 use App\Http\Controllers\BuilderController;
 use App\Http\Controllers\LandingController;
@@ -34,6 +35,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('admin')->name('admin.')->group(function () {
         Route::patch('/templates/{template}/toggle', [TemplateController::class, 'toggle'])->name('templates.toggle');
         Route::resource('templates', TemplateController::class)->except('show');
+        Route::get('/payments', [PaymentController::class, 'index'])->name('payments.index');
     });
 });
 

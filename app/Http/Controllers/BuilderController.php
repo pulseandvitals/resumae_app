@@ -16,7 +16,7 @@ class BuilderController extends Controller
         return Inertia::render('Builder/Index', [
             'templates' => ResumeTemplate::where('is_active', true)
                 ->orderBy('sort_order')
-                ->get(['id', 'key', 'name', 'description', 'price']),
+                ->get(['id', 'key', 'name', 'description', 'recommended_roles', 'price']),
         ]);
     }
 }

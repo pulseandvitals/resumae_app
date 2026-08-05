@@ -7,6 +7,12 @@ defineProps({
     template: { type: Object, default: null },
 });
 
+// Templates render at a natural width of 680px; scale down to fit the small
+// max-w-sm preview box so proportions match a real printed page.
+const PREVIEW_BOX_WIDTH = 384;
+const TEMPLATE_WIDTH = 680;
+const SCALE = PREVIEW_BOX_WIDTH / TEMPLATE_WIDTH;
+
 const paymentMethods = [
     {
         key: 'gcash',
@@ -48,21 +54,31 @@ function pay() {
 </script>
 
 <template>
-    <div class="grid gap-8 lg:grid-cols-2">
-        <div class="relative mx-auto w-full max-w-sm">
-            <TemplateRenderer
-                v-if="template"
-                :template-key="template.key"
-                :resume="resume"
-                class="pointer-events-none select-none blur-sm"
-            />
-            <div class="absolute inset-0 flex items-center justify-center">
-                <span
-                    class="-rotate-[15deg] rounded bg-black/70 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-white shadow-lg"
+    <div class="grid gap-8 lg:grid-cols-2 lg:items-start">
+        <div class="mx-auto w-full max-w-sm">
+            <div class="relative max-h-[560px] overflow-hidden rounded-xl bg-white shadow-lg ring-1 ring-gray-900/10">
+                <div
+                    v-if="template"
+                    class="pointer-events-none select-none blur-sm"
+                    :style="{ zoom: SCALE }"
                 >
-                    Preview Only
-                </span>
+                    <TemplateRenderer :template-key="template.key" :resume="resume" />
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white/60"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <span
+                        class="flex items-center gap-1.5 rounded-full bg-gray-900/85 px-4 py-2 text-xs font-bold uppercase tracking-wide text-white shadow-lg backdrop-blur-sm"
+                    >
+                        <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                        </svg>
+                        Preview Only
+                    </span>
+                </div>
             </div>
+            <p class="mt-3 text-center text-xs text-gray-400">
+                The full-resolution PDF unlocks after payment.
+            </p>
         </div>
 
         <div class="rounded-lg bg-white p-6 shadow-sm ring-1 ring-gray-900/5">

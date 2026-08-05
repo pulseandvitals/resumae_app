@@ -13,6 +13,7 @@ const form = useForm({
     key: props.template.key,
     name: props.template.name,
     description: props.template.description ?? '',
+    recommended_roles: props.template.recommended_roles ?? [],
     price: props.template.price,
     sort_order: props.template.sort_order,
     is_active: props.template.is_active,
