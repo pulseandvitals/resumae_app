@@ -23,6 +23,16 @@ class ResumeTemplateSeeder extends Seeder
             ['key' => 'compact', 'name' => 'Compact', 'description' => 'Dense layout that fits more onto one page.', 'price' => 49],
             ['key' => 'elegant', 'name' => 'Elegant', 'description' => 'Soft, refined typography with a light touch.', 'price' => 59],
             ['key' => 'technical', 'name' => 'Technical', 'description' => 'Monospace accents, built for developers & engineers.', 'price' => 49],
+            ['key' => 'bold', 'name' => 'Bold', 'description' => 'High-contrast black and white, impossible to overlook.', 'price' => 55],
+            ['key' => 'corporate', 'name' => 'Corporate', 'description' => 'Formal navy header band, built for traditional industries.', 'price' => 49],
+            ['key' => 'timeline', 'name' => 'Timeline', 'description' => 'A vertical timeline layout for a clear career story.', 'price' => 55],
+            ['key' => 'infographic', 'name' => 'Infographic', 'description' => 'Icon-led sections with a graphic, visual feel.', 'price' => 59],
+            ['key' => 'monochrome', 'name' => 'Monochrome', 'description' => 'Stark black-and-white, poster-style section dividers.', 'price' => 49],
+            ['key' => 'photo', 'name' => 'Photo', 'description' => 'A bold photo banner header for a personal touch.', 'price' => 55],
+            ['key' => 'twocolumn', 'name' => 'Two-Column', 'description' => 'Light two-column layout with a dedicated info rail.', 'price' => 59],
+            ['key' => 'academic', 'name' => 'Academic', 'description' => 'Dense, numbered CV format suited for research & academia.', 'price' => 49],
+            ['key' => 'startup', 'name' => 'Startup', 'description' => 'Playful gradient header with a modern, friendly feel.', 'price' => 55],
+            ['key' => 'swiss', 'name' => 'Swiss', 'description' => 'Strict grid, bold type, a single accent — Swiss design style.', 'price' => 59],
         ];
 
         foreach ($templates as $index => $template) {

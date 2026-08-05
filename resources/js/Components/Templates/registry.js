@@ -8,6 +8,16 @@ import StudentTemplate from '@/Components/Templates/StudentTemplate.vue';
 import CompactTemplate from '@/Components/Templates/CompactTemplate.vue';
 import ElegantTemplate from '@/Components/Templates/ElegantTemplate.vue';
 import TechnicalTemplate from '@/Components/Templates/TechnicalTemplate.vue';
+import BoldTemplate from '@/Components/Templates/BoldTemplate.vue';
+import CorporateTemplate from '@/Components/Templates/CorporateTemplate.vue';
+import TimelineTemplate from '@/Components/Templates/TimelineTemplate.vue';
+import InfographicTemplate from '@/Components/Templates/InfographicTemplate.vue';
+import MonochromeTemplate from '@/Components/Templates/MonochromeTemplate.vue';
+import PhotoTemplate from '@/Components/Templates/PhotoTemplate.vue';
+import TwoColumnTemplate from '@/Components/Templates/TwoColumnTemplate.vue';
+import AcademicTemplate from '@/Components/Templates/AcademicTemplate.vue';
+import StartupTemplate from '@/Components/Templates/StartupTemplate.vue';
+import SwissTemplate from '@/Components/Templates/SwissTemplate.vue';
 
 /**
  * Maps a ResumeTemplate's `key` (set by the admin) to its Vue component.
@@ -24,4 +34,14 @@ export const TEMPLATE_COMPONENTS = {
     compact: CompactTemplate,
     elegant: ElegantTemplate,
     technical: TechnicalTemplate,
+    bold: BoldTemplate,
+    corporate: CorporateTemplate,
+    timeline: TimelineTemplate,
+    infographic: InfographicTemplate,
+    monochrome: MonochromeTemplate,
+    photo: PhotoTemplate,
+    twocolumn: TwoColumnTemplate,
+    academic: AcademicTemplate,
+    startup: StartupTemplate,
+    swiss: SwissTemplate,
 };

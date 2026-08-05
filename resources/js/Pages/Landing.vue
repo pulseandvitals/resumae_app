@@ -288,8 +288,8 @@ const jsonLd = computed(() => ({
                     Ready to build your resume?
                 </h2>
                 <p class="mt-4 text-indigo-100">
-                    It's free to build and preview.
-                    <template v-if="startingPrice">Download starts at ₱{{ startingPrice.toFixed(0) }} — one-time, no subscription.</template>
+                    It's free to build, edit, and preview — pay only when you're ready to
+                    download.
                 </p>
                 <Link
                     :href="route('builder')"

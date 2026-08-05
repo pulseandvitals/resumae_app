@@ -25,7 +25,6 @@ defineEmits(['select']);
                 <div class="h-1 w-2/3 rounded-sm bg-gray-200"></div>
             </div>
             <p class="mt-1.5 truncate text-xs font-semibold text-gray-900">{{ template.name }}</p>
-            <p class="text-[11px] text-gray-500">₱{{ Number(template.price).toFixed(0) }}</p>
         </button>
     </div>
 </template>

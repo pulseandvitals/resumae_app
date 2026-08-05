@@ -14,6 +14,16 @@ export const TEMPLATE_SWATCHES = {
     compact: { accent: 'bg-gray-500', font: 'font-sans' },
     elegant: { accent: 'bg-rose-400', font: 'font-serif' },
     technical: { accent: 'bg-teal-500', font: 'font-mono' },
+    bold: { accent: 'bg-black', font: 'font-sans' },
+    corporate: { accent: 'bg-slate-900', font: 'font-sans' },
+    timeline: { accent: 'bg-blue-500', font: 'font-sans' },
+    infographic: { accent: 'bg-orange-500', font: 'font-sans' },
+    monochrome: { accent: 'bg-gray-900', font: 'font-sans' },
+    photo: { accent: 'bg-indigo-600', font: 'font-sans' },
+    twocolumn: { accent: 'bg-emerald-600', font: 'font-sans' },
+    academic: { accent: 'bg-stone-700', font: 'font-serif' },
+    startup: { accent: 'bg-purple-500', font: 'font-sans' },
+    swiss: { accent: 'bg-red-600', font: 'font-sans' },
 };
 
 export function templateSwatch(key) {

@@ -25,15 +25,10 @@ const SCALE = 0.4;
             <div class="absolute inset-0 bg-gradient-to-t from-white/10 via-transparent to-transparent"></div>
         </div>
 
-        <div class="flex items-center justify-between gap-2 border-t border-gray-100 p-4">
-            <div>
-                <p class="text-sm font-semibold text-gray-900">{{ template.name }}</p>
-                <p v-if="template.description" class="mt-0.5 line-clamp-1 text-xs text-gray-500">
-                    {{ template.description }}
-                </p>
-            </div>
-            <p class="shrink-0 text-sm font-semibold text-indigo-600">
-                &#8369;{{ Number(template.price).toFixed(0) }}
+        <div class="border-t border-gray-100 p-4">
+            <p class="text-sm font-semibold text-gray-900">{{ template.name }}</p>
+            <p v-if="template.description" class="mt-0.5 line-clamp-1 text-xs text-gray-500">
+                {{ template.description }}
             </p>
         </div>
     </Link>

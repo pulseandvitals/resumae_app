@@ -24,6 +24,16 @@ class ResumeTemplate extends Model
         'compact',
         'elegant',
         'technical',
+        'bold',
+        'corporate',
+        'timeline',
+        'infographic',
+        'monochrome',
+        'photo',
+        'twocolumn',
+        'academic',
+        'startup',
+        'swiss',
     ];
 
     /**
