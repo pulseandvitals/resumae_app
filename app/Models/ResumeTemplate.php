@@ -70,6 +70,16 @@ class ResumeTemplate extends Model
         'framenavy',
         'framebronze',
         'frameforest',
+        'diagonal',
+        'newspaper',
+        'badge',
+        'underline',
+        'gridblock',
+        'watermark',
+        'terminal',
+        'boxedtab',
+        'zigzag',
+        'dossier',
     ];
 
     /**

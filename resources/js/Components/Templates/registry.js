@@ -48,6 +48,16 @@ import StackedGrayTemplate from '@/Components/Templates/StackedGrayTemplate.vue'
 import FrameNavyTemplate from '@/Components/Templates/FrameNavyTemplate.vue';
 import FrameBronzeTemplate from '@/Components/Templates/FrameBronzeTemplate.vue';
 import FrameForestTemplate from '@/Components/Templates/FrameForestTemplate.vue';
+import DiagonalTemplate from '@/Components/Templates/DiagonalTemplate.vue';
+import NewspaperTemplate from '@/Components/Templates/NewspaperTemplate.vue';
+import BadgeTemplate from '@/Components/Templates/BadgeTemplate.vue';
+import UnderlineTemplate from '@/Components/Templates/UnderlineTemplate.vue';
+import GridblockTemplate from '@/Components/Templates/GridblockTemplate.vue';
+import WatermarkTemplate from '@/Components/Templates/WatermarkTemplate.vue';
+import TerminalTemplate from '@/Components/Templates/TerminalTemplate.vue';
+import BoxedTabTemplate from '@/Components/Templates/BoxedTabTemplate.vue';
+import ZigzagTemplate from '@/Components/Templates/ZigzagTemplate.vue';
+import DossierTemplate from '@/Components/Templates/DossierTemplate.vue';
 
 /**
  * Maps a ResumeTemplate's `key` (set by the admin) to its Vue component.
@@ -104,4 +114,14 @@ export const TEMPLATE_COMPONENTS = {
     framenavy: FrameNavyTemplate,
     framebronze: FrameBronzeTemplate,
     frameforest: FrameForestTemplate,
+    diagonal: DiagonalTemplate,
+    newspaper: NewspaperTemplate,
+    badge: BadgeTemplate,
+    underline: UnderlineTemplate,
+    gridblock: GridblockTemplate,
+    watermark: WatermarkTemplate,
+    terminal: TerminalTemplate,
+    boxedtab: BoxedTabTemplate,
+    zigzag: ZigzagTemplate,
+    dossier: DossierTemplate,
 };

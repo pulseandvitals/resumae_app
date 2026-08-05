@@ -98,7 +98,18 @@ function pay() {
             </div>
 
             <div class="mt-5">
-                <p class="text-sm font-medium text-gray-700">Choose a payment method</p>
+                <div class="flex items-center justify-between gap-2">
+                    <p class="text-sm font-medium text-gray-700">Choose a payment method</p>
+                    <span class="flex items-center gap-1 text-[11px] font-medium text-emerald-600">
+                        <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l1.5 1.5L15 9.75M12 3l7.5 4.5v9L12 21l-7.5-4.5v-9L12 3z" />
+                        </svg>
+                        No hidden charges
+                    </span>
+                </div>
+                <p class="mt-1 text-xs text-gray-400">
+                    Easy, fast checkout — pay {{ template ? `₱${Number(template.price).toFixed(0)}` : 'the listed price' }} once, that's it. No subscriptions, no surprise fees.
+                </p>
                 <div class="mt-2 grid grid-cols-2 gap-2">
                     <label
                         v-for="method in paymentMethods"

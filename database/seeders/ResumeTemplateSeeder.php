@@ -75,6 +75,18 @@ class ResumeTemplateSeeder extends Seeder
             ['key' => 'framenavy', 'name' => 'Frame Navy', 'description' => 'Formal full-page navy border frame with serif headings.', 'price' => 59, 'recommended_roles' => ['Legal Assistant', 'Government', 'Corporate Executive']],
             ['key' => 'framebronze', 'name' => 'Frame Bronze', 'description' => 'Formal full-page bronze border frame with serif headings.', 'price' => 59, 'recommended_roles' => ['Legal Assistant', 'Government', 'Corporate Executive']],
             ['key' => 'frameforest', 'name' => 'Frame Forest', 'description' => 'Formal full-page forest-green border frame with serif headings.', 'price' => 59, 'recommended_roles' => ['Legal Assistant', 'Government', 'Corporate Executive']],
+
+            // 10 more distinct one-off designs
+            ['key' => 'diagonal', 'name' => 'Diagonal', 'description' => 'A skewed cyan band cuts behind the header for a dynamic, energetic feel.', 'price' => 49, 'recommended_roles' => ['Sales Representative', 'Marketing Specialist', 'Business Development']],
+            ['key' => 'newspaper', 'name' => 'Newspaper', 'description' => 'A masthead-style header with two-column newsprint body text and rule lines.', 'price' => 45, 'recommended_roles' => ['Journalist', 'Content Writer', 'Editor']],
+            ['key' => 'badge', 'name' => 'Badge', 'description' => 'A circular initials badge and rounded skill badges for a friendly, approachable look.', 'price' => 49, 'recommended_roles' => ['Customer Support', 'Community Manager', 'Social Media Manager']],
+            ['key' => 'underline', 'name' => 'Underline', 'description' => 'A bold underlined name with numbered section headings for a confident, structured read.', 'price' => 49, 'recommended_roles' => ['Consultant', 'Business Analyst', 'Operations Manager']],
+            ['key' => 'gridblock', 'name' => 'Gridblock', 'description' => 'Header contact details laid out as labeled grid cells, built for data-minded roles.', 'price' => 55, 'recommended_roles' => ['Data Analyst', 'Research Analyst', 'Data Scientist']],
+            ['key' => 'watermark', 'name' => 'Watermark', 'description' => 'A faint oversized initials watermark sits behind an elegant, understated header.', 'price' => 59, 'recommended_roles' => ['Architect', 'Interior Designer', 'Photographer']],
+            ['key' => 'terminal', 'name' => 'Terminal', 'description' => 'A dark, monospace code-editor theme with $ prompt section headers, built for developers.', 'price' => 49, 'recommended_roles' => ['Software Engineer', 'DevOps Engineer', 'Backend Developer']],
+            ['key' => 'boxedtab', 'name' => 'Boxed Tab', 'description' => 'Section headings sit inside solid colored tabs for a bold, organized structure.', 'price' => 55, 'recommended_roles' => ['Product Manager', 'Program Manager', 'Scrum Master']],
+            ['key' => 'zigzag', 'name' => 'Zigzag', 'description' => 'Section headings alternate left and right for a playful, editorial layout.', 'price' => 55, 'recommended_roles' => ['Graphic Designer', 'Art Director', 'Creative Director']],
+            ['key' => 'dossier', 'name' => 'Dossier', 'description' => 'A rotated side tab gives this warm, kraft-toned layout a case-file feel.', 'price' => 49, 'recommended_roles' => ['Investigator', 'Paralegal', 'Compliance Officer']],
         ];
 
         foreach ($templates as $index => $template) {

@@ -9,7 +9,7 @@ const props = defineProps({
     templates: { type: Array, default: () => [] },
 });
 
-const features = [
+const features = computed(() => [
     {
         title: 'No Login Required',
         description: 'Start building right away. No account, no email, no friction.',
@@ -23,7 +23,7 @@ const features = [
         description: 'Watch your resume update instantly as you type, section by section.',
     },
     {
-        title: '50 Designer Templates',
+        title: `${props.templates.length} Designer Templates`,
         description: 'Modern, Classic, Executive, Creative and more — switch freely before you pay.',
     },
     {
@@ -34,7 +34,7 @@ const features = [
         title: 'Mobile Friendly',
         description: 'Build and preview your resume comfortably from any device.',
     },
-];
+]);
 
 const faqs = [
     {

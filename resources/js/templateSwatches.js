@@ -54,6 +54,16 @@ export const TEMPLATE_SWATCHES = {
     framenavy: { accent: 'bg-slate-800', font: 'font-serif' },
     framebronze: { accent: 'bg-amber-800', font: 'font-serif' },
     frameforest: { accent: 'bg-emerald-800', font: 'font-serif' },
+    diagonal: { accent: 'bg-cyan-600', font: 'font-sans' },
+    newspaper: { accent: 'bg-gray-900', font: 'font-serif' },
+    badge: { accent: 'bg-fuchsia-600', font: 'font-sans' },
+    underline: { accent: 'bg-amber-500', font: 'font-sans' },
+    gridblock: { accent: 'bg-sky-600', font: 'font-sans' },
+    watermark: { accent: 'bg-slate-500', font: 'font-sans' },
+    terminal: { accent: 'bg-lime-400', font: 'font-mono' },
+    boxedtab: { accent: 'bg-orange-600', font: 'font-sans' },
+    zigzag: { accent: 'bg-violet-600', font: 'font-sans' },
+    dossier: { accent: 'bg-amber-800', font: 'font-sans' },
 };
 
 export function templateSwatch(key) {
