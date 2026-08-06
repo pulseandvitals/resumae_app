@@ -3,7 +3,9 @@
 use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Admin\TemplateController;
 use App\Http\Controllers\BuilderController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\PdfController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +14,13 @@ use Inertia\Inertia;
 Route::get('/', [LandingController::class, 'index'])->name('home');
 
 Route::get('/builder', [BuilderController::class, 'index'])->name('builder');
+
+Route::post('/checkout', [CheckoutController::class, 'store'])->name('checkout.store');
+Route::get('/checkout/{payment}/return', [CheckoutController::class, 'return'])->name('checkout.return');
+
+Route::post('/payments/{token}/pdf', [PdfController::class, 'store'])
+    ->middleware('throttle:10,1')
+    ->name('payments.pdf');
 
 Route::get('/sitemap.xml', function () {
     $urls = [

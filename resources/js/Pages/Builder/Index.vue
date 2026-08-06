@@ -32,10 +32,19 @@ const selectedTemplate = computed(() =>
     props.templates.find((template) => template.key === selectedKey.value) ?? null,
 );
 
-const requestedKey = new URLSearchParams(window.location.search).get('template');
+const searchParams = new URLSearchParams(window.location.search);
+
+const requestedKey = searchParams.get('template');
 if (requestedKey && props.templates.some((template) => template.key === requestedKey)) {
     selectedKey.value = requestedKey;
 }
+
+// After bouncing back from PayMongo's hosted checkout, land straight on the
+// download step with the payment result already resolved by the backend.
+const paymentStatus = ['success', 'failed'].includes(searchParams.get('payment'))
+    ? searchParams.get('payment')
+    : null;
+const paymentToken = searchParams.get('token');
 
 const {
     resume,
@@ -76,9 +85,9 @@ const steps = [
     { id: 3, label: 'Download' },
 ];
 
-const currentStep = ref(1);
+const currentStep = ref(paymentStatus ? steps.length : 1);
 // Returning visitors (localStorage already has a name) can jump straight in.
-const maxStepReached = ref(resume.personal.fullName ? steps.length : 1);
+const maxStepReached = ref(paymentStatus || resume.personal.fullName ? steps.length : 1);
 
 const canContinueFromStep1 = computed(() => resume.personal.fullName.trim().length > 0);
 
@@ -245,7 +254,12 @@ function nextStep() {
                     </p>
                 </div>
 
-                <DownloadPanel :resume="resume" :template="selectedTemplate" />
+                <DownloadPanel
+                    :resume="resume"
+                    :template="selectedTemplate"
+                    :payment-status="paymentStatus"
+                    :payment-token="paymentToken"
+                />
 
                 <div class="mt-8">
                     <button

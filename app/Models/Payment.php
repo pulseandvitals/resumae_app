@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
     'method',
     'status',
     'reference',
+    'download_token',
     'paid_at',
     'pdf_uploaded_at',
     'pdf_path',
