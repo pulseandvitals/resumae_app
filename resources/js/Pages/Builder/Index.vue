@@ -112,7 +112,7 @@ function nextStep() {
         <header class="sticky top-0 z-10 border-b border-gray-200 bg-white">
             <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-3 sm:flex-row sm:items-center sm:justify-between">
                 <Link :href="route('home')" class="text-base font-bold tracking-tight text-gray-900">
-                    Resum<span class="text-indigo-600">AE</span>
+                    Resu<span class="text-indigo-600">Matik</span>
                 </Link>
 
                 <StepIndicator

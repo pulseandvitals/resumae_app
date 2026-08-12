@@ -42,7 +42,7 @@ const faqs = [
         answer: "No. You can build, edit, and preview your resume without signing up. We only ask for payment when you're ready to download the PDF.",
     },
     {
-        question: 'Is ResumAE really free?',
+        question: 'Is ResuMatik really free?',
         answer: "Yes — filling out your resume, switching templates, and previewing it live are all free with unlimited edits. You only pay a small one-time fee when you download the finished PDF.",
     },
     {
@@ -72,7 +72,7 @@ const startingPrice = computed(() => {
 const jsonLd = computed(() => ({
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'ResumAE',
+    name: 'ResuMatik',
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Any',
     description:
@@ -95,7 +95,7 @@ const jsonLd = computed(() => ({
         <header class="border-b border-gray-200 bg-white">
             <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <span class="text-lg font-bold tracking-tight text-gray-900">
-                    Resum<span class="text-indigo-600">AE</span>
+                    Resu<span class="text-indigo-600">Matik</span>
                 </span>
                 <nav class="hidden items-center gap-8 sm:flex">
                     <a href="#templates" class="text-sm font-medium text-gray-600 hover:text-gray-900">Templates</a>
@@ -311,7 +311,7 @@ const jsonLd = computed(() => ({
         <!-- Footer -->
         <footer class="border-t border-gray-200 bg-white py-8">
             <div class="mx-auto max-w-7xl px-6 text-center text-sm text-gray-500">
-                &copy; {{ new Date().getFullYear() }} ResumAE. No login required, ever.
+                &copy; {{ new Date().getFullYear() }} ResuMatik. No login required, ever.
             </div>
         </footer>
     </div>

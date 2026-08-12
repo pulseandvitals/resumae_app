@@ -58,6 +58,26 @@ import TerminalTemplate from '@/Components/Templates/TerminalTemplate.vue';
 import BoxedTabTemplate from '@/Components/Templates/BoxedTabTemplate.vue';
 import ZigzagTemplate from '@/Components/Templates/ZigzagTemplate.vue';
 import DossierTemplate from '@/Components/Templates/DossierTemplate.vue';
+import EnvelopeTemplate from '@/Components/Templates/EnvelopeTemplate.vue';
+import TicketTemplate from '@/Components/Templates/TicketTemplate.vue';
+import BlueprintTemplate from '@/Components/Templates/BlueprintTemplate.vue';
+import MosaicTemplate from '@/Components/Templates/MosaicTemplate.vue';
+import SignatureTemplate from '@/Components/Templates/SignatureTemplate.vue';
+import HalftoneTemplate from '@/Components/Templates/HalftoneTemplate.vue';
+import OrigamiTemplate from '@/Components/Templates/OrigamiTemplate.vue';
+import ChalkboardTemplate from '@/Components/Templates/ChalkboardTemplate.vue';
+import BracketTemplate from '@/Components/Templates/BracketTemplate.vue';
+import MarqueeTemplate from '@/Components/Templates/MarqueeTemplate.vue';
+import PassportTemplate from '@/Components/Templates/PassportTemplate.vue';
+import BlockquoteTemplate from '@/Components/Templates/BlockquoteTemplate.vue';
+import SkylineTemplate from '@/Components/Templates/SkylineTemplate.vue';
+import WaveTemplate from '@/Components/Templates/WaveTemplate.vue';
+import PanelTemplate from '@/Components/Templates/PanelTemplate.vue';
+import VintageTemplate from '@/Components/Templates/VintageTemplate.vue';
+import NeonTemplate from '@/Components/Templates/NeonTemplate.vue';
+import CompassTemplate from '@/Components/Templates/CompassTemplate.vue';
+import FilmstripTemplate from '@/Components/Templates/FilmstripTemplate.vue';
+import SpreadsheetTemplate from '@/Components/Templates/SpreadsheetTemplate.vue';
 
 /**
  * Maps a ResumeTemplate's `key` (set by the admin) to its Vue component.
@@ -124,4 +144,24 @@ export const TEMPLATE_COMPONENTS = {
     boxedtab: BoxedTabTemplate,
     zigzag: ZigzagTemplate,
     dossier: DossierTemplate,
+    envelope: EnvelopeTemplate,
+    ticket: TicketTemplate,
+    blueprint: BlueprintTemplate,
+    mosaic: MosaicTemplate,
+    signature: SignatureTemplate,
+    halftone: HalftoneTemplate,
+    origami: OrigamiTemplate,
+    chalkboard: ChalkboardTemplate,
+    bracket: BracketTemplate,
+    marquee: MarqueeTemplate,
+    passport: PassportTemplate,
+    blockquote: BlockquoteTemplate,
+    skyline: SkylineTemplate,
+    wave: WaveTemplate,
+    panel: PanelTemplate,
+    vintage: VintageTemplate,
+    neon: NeonTemplate,
+    compass: CompassTemplate,
+    filmstrip: FilmstripTemplate,
+    spreadsheet: SpreadsheetTemplate,
 };

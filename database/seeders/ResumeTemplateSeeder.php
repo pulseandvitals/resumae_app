@@ -87,6 +87,28 @@ class ResumeTemplateSeeder extends Seeder
             ['key' => 'boxedtab', 'name' => 'Boxed Tab', 'description' => 'Section headings sit inside solid colored tabs for a bold, organized structure.', 'price' => 55, 'recommended_roles' => ['Product Manager', 'Program Manager', 'Scrum Master']],
             ['key' => 'zigzag', 'name' => 'Zigzag', 'description' => 'Section headings alternate left and right for a playful, editorial layout.', 'price' => 55, 'recommended_roles' => ['Graphic Designer', 'Art Director', 'Creative Director']],
             ['key' => 'dossier', 'name' => 'Dossier', 'description' => 'A rotated side tab gives this warm, kraft-toned layout a case-file feel.', 'price' => 49, 'recommended_roles' => ['Investigator', 'Paralegal', 'Compliance Officer']],
+
+            // 20 more distinct one-off designs
+            ['key' => 'envelope', 'name' => 'Envelope', 'description' => 'A formal boxed header with a wax-seal-style accent, built for traditional correspondence.', 'price' => 59, 'recommended_roles' => ['Legal Assistant', 'Executive Assistant', 'Government']],
+            ['key' => 'ticket', 'name' => 'Ticket', 'description' => 'A perforated, ticket-stub divider separates the header from the body.', 'price' => 59, 'recommended_roles' => ['Event Coordinator', 'Travel Agent', 'Hospitality']],
+            ['key' => 'blueprint', 'name' => 'Blueprint', 'description' => 'A technical drafting-grid background gives this layout an engineering feel.', 'price' => 59, 'recommended_roles' => ['Civil Engineer', 'Architect', 'Mechanical Engineer']],
+            ['key' => 'mosaic', 'name' => 'Mosaic', 'description' => 'Skills render as a colorful tile mosaic for an expressive, creative look.', 'price' => 59, 'recommended_roles' => ['Graphic Designer', 'Artist', 'Interior Designer']],
+            ['key' => 'signature', 'name' => 'Signature', 'description' => 'An elegant script-style name with a flourish underline, refined and personal.', 'price' => 59, 'recommended_roles' => ['Executive', 'Consultant', 'Public Relations']],
+            ['key' => 'halftone', 'name' => 'Halftone', 'description' => 'A dotted halftone accent band gives this layout a pop-art energy.', 'price' => 59, 'recommended_roles' => ['Illustrator', 'Comic Artist', 'Marketing']],
+            ['key' => 'origami', 'name' => 'Origami', 'description' => 'A folded-corner accent brings subtle dimension to a clean, modern layout.', 'price' => 59, 'recommended_roles' => ['Product Designer', 'UX Designer', 'Architect']],
+            ['key' => 'chalkboard', 'name' => 'Chalkboard', 'description' => 'A dark chalkboard theme with chalk-white type, warm and approachable.', 'price' => 59, 'recommended_roles' => ['Teacher', 'Tutor', 'Instructional Designer']],
+            ['key' => 'bracket', 'name' => 'Bracket', 'description' => 'Large decorative brackets frame the name for a minimal, technical look.', 'price' => 59, 'recommended_roles' => ['Software Engineer', 'Data Engineer', 'DevOps Engineer']],
+            ['key' => 'marquee', 'name' => 'Marquee', 'description' => 'A bold bordered header band evokes a theater marquee for standout energy.', 'price' => 59, 'recommended_roles' => ['Event Planner', 'Performer', 'Marketing']],
+            ['key' => 'passport', 'name' => 'Passport', 'description' => 'An ID-card style header with a stamped badge, built for well-traveled roles.', 'price' => 59, 'recommended_roles' => ['Travel Agent', 'Flight Attendant', 'Logistics Coordinator']],
+            ['key' => 'blockquote', 'name' => 'Blockquote', 'description' => 'A large decorative quotation mark gives the summary an editorial feel.', 'price' => 59, 'recommended_roles' => ['Writer', 'Journalist', 'Editor']],
+            ['key' => 'skyline', 'name' => 'Skyline', 'description' => 'A subtle city-skyline silhouette accents this modern corporate layout.', 'price' => 59, 'recommended_roles' => ['Urban Planner', 'Real Estate', 'Architect']],
+            ['key' => 'wave', 'name' => 'Wave', 'description' => 'A gentle wave divider flows between the header and the body.', 'price' => 59, 'recommended_roles' => ['Marine Biologist', 'Surf Instructor', 'Hospitality']],
+            ['key' => 'panel', 'name' => 'Panel', 'description' => 'Bold black-bordered panels give this layout a playful comic-book feel.', 'price' => 59, 'recommended_roles' => ['Illustrator', 'Animator', 'Comic Artist']],
+            ['key' => 'vintage', 'name' => 'Vintage', 'description' => 'Retro typewriter type on a warm sepia palette, old-school and formal.', 'price' => 59, 'recommended_roles' => ['Historian', 'Librarian', 'Academic']],
+            ['key' => 'neon', 'name' => 'Neon', 'description' => 'A dark theme with glowing neon-accent type for bold, after-hours energy.', 'price' => 59, 'recommended_roles' => ['DJ / Performer', 'Nightlife Manager', 'Graphic Designer']],
+            ['key' => 'compass', 'name' => 'Compass', 'description' => 'A compass-rose motif accents this layout, built for well-traveled careers.', 'price' => 59, 'recommended_roles' => ['Travel Agent', 'Tour Guide', 'Logistics Coordinator']],
+            ['key' => 'filmstrip', 'name' => 'Filmstrip', 'description' => 'A sprocket-hole photo border gives this layout a creative, media feel.', 'price' => 59, 'recommended_roles' => ['Photographer', 'Videographer', 'Film Editor']],
+            ['key' => 'spreadsheet', 'name' => 'Spreadsheet', 'description' => 'A structured, gridded layout built for detail-oriented, numbers-first roles.', 'price' => 59, 'recommended_roles' => ['Accountant', 'Financial Analyst', 'Auditor']],
         ];
 
         foreach ($templates as $index => $template) {
